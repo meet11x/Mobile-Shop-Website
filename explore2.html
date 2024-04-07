@@ -1,0 +1,2085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js"></script>
+    <link rel="icon" href="mg2/applelogo-removebg-preview.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="container-fluid cont fixed-top">
+      <div style="margin-top: 5px">
+        <a
+          href="index.html"
+          style="
+            text-align: left;
+            text-decoration: none;
+            color: rgb(33, 33, 33);
+          "
+          ><i class="fas fa-arrow-alt-circle-left"></i>&nbsp;Home</a
+        >
+      </div>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="#samsung" class="nav-link active" data-bs-toggle="pill"
+            >Samsung</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#apple" class="nav-link" data-bs-toggle="pill">Apple</a>
+        </li>
+        <li class="nav-item">
+          <a href="#mi" class="nav-link" data-bs-toggle="pill">Xiaomi </a>
+        </li>
+        <li class="nav-item">
+          <a href="#op" class="nav-link" data-bs-toggle="pill">OnePlus</a>
+        </li>
+        <li class="nav-item">
+          <a href="#vivo" class="nav-link" data-bs-toggle="pill">Vivo</a>
+        </li>
+      </ul>
+      <!-- <hr size="2px" color="black" /> -->
+    </div>
+    <br /><br /><br />
+    <div class="tab-content">
+      <div class="tab-pane container-fluid active" id="samsung">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-2">
+              <h5 style="text-align: center">
+                <i class="fas fa-filter"></i>&nbsp;Filters
+              </h5>
+              <br /><br /><br />
+              <h5
+                style="
+                  text-align: center;
+                  color: black;
+                  font-weight: 400;
+                  font-size: 18px;
+                "
+              >
+                Class :
+              </h5>
+
+              <div class="d-flex flex-column">
+                <button class="series">
+                  <input
+                    type="radio"
+                    name="series"
+                    onclick="changetoseriesS()"
+                    checked
+                  />&nbsp;Galaxy S
+                </button>
+                <button class="series">
+                  <input
+                    type="radio"
+                    name="series"
+                    onclick="changetoseriesA()"
+                  />&nbsp;Galaxy A
+                </button>
+                <button class="series">
+                  <input
+                    type="radio"
+                    name="series"
+                    onclick="changetoseriesM()"
+                  />&nbsp;Galaxy M
+                </button>
+                <button class="series">
+                  <input
+                    type="radio"
+                    name="series"
+                    onclick="changetoseriesF()"
+                  />&nbsp;Galaxy F
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <h5 style="text-align: center">Results</h5>
+              <br /><br />
+              <table class="table table-responsive-sm table-bordered">
+                <tr class="productspage">
+                  <td>
+                    <div style="justify-content: space-between; display: flex">
+                      <div>
+                        <button
+                          style="
+                            background-color: black;
+                            border-radius: 15px;
+                            color: white;
+                          "
+                        >
+                          NEW
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          style="border: none; background-color: transparent"
+                          onclick="like(this)"
+                        >
+                          <i class="fas fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img
+                        src="Samsung/s24+black.jpeg"
+                        class="mainimage"
+                        alt=""
+                      />
+                    </div>
+                    <a
+                      class="btn btn-sm btn-outline-dark mx-auto d-block w-25 look"
+                      href="s24+.html"
+                    >
+                      Quick Look
+                    </a>
+                    <div class="nameofproduct">
+                      <p class="">Samsung S24 Ultra</p>
+                    </div>
+                    <div class="colordata">
+                      <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                      <p class="">
+                        <span style="font-weight: 400">Colour : </span>
+                        <span class="colors">Black | Grey | Violet</span>
+                      </p>
+                    </div>
+                    <div style="display: inline">
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color1"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: black;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color2"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: lightgrey;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color3"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: violet;
+                          "
+                        ></div>
+                      </button>
+                    </div>
+                    <p class="">
+                      <span style="font-weight: 400">STORAGE : </span
+                      ><span class="storage"> 1TB | 512GB | 256GB</span>
+                    </p>
+                    <p class="">
+                      <span style="font-weight: 400">Starting Price : </span>
+                      <span class="price"> 139900/-</span>
+                    </p>
+
+                    <ul>
+                      <li class="text1">
+                        Industry-leading hardware meets world-changing AI
+                      </li>
+                      <li class="text2">Made with titanium. Built to last</li>
+                    </ul>
+                    <a href="s24+.html" class="btn btn-dark">Buy Now</a>
+                  </td>
+                  <td>
+                    <div style="justify-content: space-between; display: flex">
+                      <div>
+                        <button
+                          style="
+                            background-color: black;
+                            border-radius: 15px;
+                            color: white;
+                          "
+                        >
+                          NEW
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          onclick="like(this)"
+                          style="border: none; background-color: transparent"
+                        >
+                          <i class="fas fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img
+                        src="Samsung/s23feblack.jpeg"
+                        class="mainimage"
+                        alt=""
+                      />
+                    </div>
+                    <a
+                      class="btn btn-sm btn-outline-dark mx-auto d-block w-25 look"
+                      href="s23.html"
+                    >
+                      Quick Look
+                    </a>
+                    <div class="nameofproduct">
+                      <p>Samsung S23</p>
+                    </div>
+                    <div class="colordata">
+                      <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                      <p class="">
+                        <span style="font-weight: 400">Colour : </span
+                        ><span class="colors">Black | Green | Violet</span>
+                      </p>
+                    </div>
+                    <div style="display: inline">
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color1"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: black;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color2"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: lightgreen;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color3"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: violet;
+                          "
+                        ></div>
+                      </button>
+                    </div>
+                    <p class="">
+                      <span style="font-weight: 400">STORAGE : </span
+                      ><span class="storage">128GB | 512GB | 256GB</span>
+                    </p>
+                    <p class="">
+                      <span style="font-weight: 400">Starting Price : </span>
+                      <span class="price">69900/-</span>
+                    </p>
+
+                    <ul>
+                      <li class="text1">Snap your best night selfies yet</li>
+                      <li class="text2">
+                        Epically fast photography and gameplay
+                      </li>
+                    </ul>
+                    <a href="s23.html" class="btn btn-dark">Buy Now</a>
+                  </td>
+                  <td>
+                    <div style="justify-content: space-between; display: flex">
+                      <div>
+                        <button
+                          style="
+                            background-color: black;
+                            border-radius: 15px;
+                            color: white;
+                          "
+                        >
+                          NEW
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          onclick="like(this)"
+                          style="border: none; background-color: transparent"
+                        >
+                          <i class="fas fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img
+                        src="Samsung/in-galaxy-s24-plus-492657-sm-s926blbcins-539573087.avif"
+                        class="mainimage"
+                        alt=""
+                      />
+                    </div>
+                    <a
+                      href="s24.html"
+                      class="btn btn-sm btn-outline-dark mx-auto d-block w-25 look"
+                      onclick="modalimage('Samsung/s241.jpg','Samsung/s242.png','Samsung/s243.png','Samsung/s244.png')"
+                    >
+                      Quick Look
+                    </a>
+                    <div class="nameofproduct">
+                      <p>Samsung S24</p>
+                    </div>
+                    <div class="colordata">
+                      <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                      <p class=" ">
+                        <span style="font-weight: 400">Colour : </span>
+                        <span class="colors"> Black | Orange | Lightgreen</span>
+                      </p>
+                    </div>
+                    <div style="display: inline">
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color1"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: lightsalmon;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color2"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: lightgreen;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color3"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: lightblue;
+                          "
+                        ></div>
+                      </button>
+                    </div>
+                    <p class=" ">
+                      <span style="font-weight: 400">STORAGE : </span
+                      ><span class="storage">1TB | 512GB | 256GB</span>
+                    </p>
+                    <p class="">
+                      <span style="font-weight: 400">Starting Price : </span>
+                      <span class="price"> 109900/-</span>
+                    </p>
+
+                    <ul>
+                      <li class="text1">
+                        Setting the new standard of mobile, now
+                      </li>
+                      <li class="text2">Made with titanium. Built to last</li>
+                    </ul>
+                    <a href="s24.html" class="btn btn-dark">Buy Now</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane container-fluid" id="apple">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-2">
+              <h5 style="text-align: center">
+                <i class="fas fa-filter"></i>&nbsp;Filters
+              </h5>
+              <br /><br /><br />
+              <h5
+                style="
+                  text-align: center;
+                  color: black;
+                  font-weight: 400;
+                  font-size: 18px;
+                "
+              >
+                Class :
+              </h5>
+
+              <div class="d-flex flex-column">
+                <button class="series">
+                  <input
+                    type="radio"
+                    name="series"
+                    onclick="changetoseriesi15()"
+                    checked
+                  />&nbsp;iPhone 15
+                </button>
+                <button class="series">
+                  <input
+                    type="radio"
+                    name="series"
+                    onclick="changetoseriesi14()"
+                  />&nbsp;iPhone 14
+                </button>
+                <button class="series">
+                  <input
+                    type="radio"
+                    name="series"
+                    onclick="changetoseriesi13()"
+                  />&nbsp;iPhone 13
+                </button>
+                <button class="series">
+                  <input
+                    type="radio"
+                    name="series"
+                    onclick="changetoseriesipad()"
+                  />&nbsp;iPad's
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <h5 style="text-align: center">Results</h5>
+              <br /><br />
+              <table class="table table-responsive-sm table-bordered">
+                <tr class="productspage">
+                  <td>
+                    <div style="justify-content: space-between; display: flex">
+                      <div>
+                        <button
+                          style="
+                            background-color: black;
+                            border-radius: 15px;
+                            color: white;
+                          "
+                        >
+                          NEW
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          onclick="like(this)"
+                          style="border: none; background-color: transparent"
+                        >
+                          <i class="fas fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img src="Apple/i15pro.jpeg" class="mainimage2" alt="" />
+                    </div>
+                    <a
+                      href="i15pro.html"
+                      class="btn btn-sm btn-outline-dark mx-auto w-25 d-block look"
+                    >
+                      Quick Look
+                    </a>
+                    <div class="nameofproduct2">
+                      <p>iPhone 15 Pro</p>
+                    </div>
+                    <div class="colordata">
+                      <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                      <p class="">
+                        <span style="font-weight: 400">Colour : </span>
+                        <span class="colors2">Black | DeepBlue | White</span>
+                      </p>
+                    </div>
+                    <div style="display: inline">
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color21"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: black;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color22"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: darkslateblue;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color23"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: whitesmoke;
+                          "
+                        ></div>
+                      </button>
+                    </div>
+                    <p class="">
+                      <span style="font-weight: 400">STORAGE : </span
+                      ><span class="storage2"> 1TB | 512GB | 256GB</span>
+                    </p>
+                    <p class="">
+                      <span style="font-weight: 400">Starting Price : </span>
+                      <span class="price2"> 134900/-</span>
+                    </p>
+
+                    <ul>
+                      <li class="text21">Up to 29 hours video playback</li>
+                      <li class="text22">A17 Pro chip with 6-core GPU</li>
+                    </ul>
+                    <a href="i15pro.html" class="btn btn-dark">Buy Now</a>
+                  </td>
+                  <td>
+                    <div style="justify-content: space-between; display: flex">
+                      <div>
+                        <button
+                          style="
+                            background-color: black;
+                            border-radius: 15px;
+                            color: white;
+                          "
+                        >
+                          NEW
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          onclick="like(this)"
+                          style="border: none; background-color: transparent"
+                        >
+                          <i class="fas fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img
+                        src="Apple/i15green.jpeg"
+                        class="mainimage2"
+                        alt=""
+                      />
+                    </div>
+                    <a
+                      href="i15.html"
+                      class="btn btn-sm btn-outline-dark mx-auto d-block w-25 look"
+                    >
+                      Quick Look
+                    </a>
+                    <div class="nameofproduct2">
+                      <p class="">iPhone 15</p>
+                    </div>
+                    <div class="colordata">
+                      <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                      <p class="">
+                        <span style="font-weight: 400">Colour : </span
+                        ><span class="colors2"
+                          >Black | Green | Pink | Yellow | Blue</span
+                        >
+                      </p>
+                    </div>
+                    <div style="display: inline">
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color21"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: black;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color22"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: lightgreen;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color23"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: lightpink;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color24"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: lightyellow;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color25"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: skyblue;
+                          "
+                        ></div>
+                      </button>
+                    </div>
+                    <p class="">
+                      <span style="font-weight: 400">STORAGE : </span
+                      ><span class="storage2">128GB | 512GB | 256GB</span>
+                    </p>
+                    <p class="">
+                      <span style="font-weight: 400">Starting Price : </span>
+                      <span class="price2">79900/-</span>
+                    </p>
+
+                    <ul>
+                      <li class="text21">Up to 26 hours video playback</li>
+                      <li class="text22">Advanced dual-camera system</li>
+                    </ul>
+                    <a href="i15.html" class="btn btn-dark">Buy Now</a>
+                  </td>
+                  <td>
+                    <div style="justify-content: space-between; display: flex">
+                      <div>
+                        <button
+                          style="
+                            background-color: black;
+                            border-radius: 15px;
+                            color: white;
+                          "
+                        >
+                          NEW
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          onclick="like(this)"
+                          style="border: none; background-color: transparent"
+                        >
+                          <i class="fas fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img
+                        src="Apple/i15promaxblue.webp"
+                        class="mainimage2"
+                        alt=""
+                      />
+                    </div>
+                    <a
+                      href=""
+                      class="btn btn-sm btn-outline-dark mx-auto d-block look"
+                      onclick="modalimage('Samsung/s241.jpg','Samsung/s242.png','Samsung/s243.png','Samsung/s244.png')"
+                    >
+                      Quick Look
+                    </a>
+                    <div class="nameofproduct2">
+                      <p class="">iPhone 15 Pro MAX</p>
+                    </div>
+                    <div class="colordata">
+                      <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                      <p class=" ">
+                        <span style="font-weight: 400">Colour : </span>
+                        <span class="colors2">
+                          Black | Grey | DeepBlue | White</span
+                        >
+                      </p>
+                    </div>
+                    <div style="display: inline">
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color21"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: lightgrey;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color22"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: darkslateblue;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color23"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: black;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color24"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: whitesmoke;
+                          "
+                        ></div>
+                      </button>
+                    </div>
+                    <p class=" ">
+                      <span style="font-weight: 400">STORAGE : </span
+                      ><span class="storage2">1TB | 512GB | 256GB</span>
+                    </p>
+                    <p class="">
+                      <span style="font-weight: 400">Starting Price : </span>
+                      <span class="price2"> 148900/-</span>
+                    </p>
+
+                    <ul>
+                      <li class="text21">
+                        A17 Pro Chip, 6 Core Processor Processor
+                      </li>
+                      <li class="text22">Made with titanium. Built to last</li>
+                    </ul>
+                    <a href="" class="btn btn-dark">Buy Now</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane container-fluid" id="mi">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-2">
+              <h5 style="text-align: center">
+                <i class="fas fa-filter"></i>&nbsp;Filters
+              </h5>
+              <br /><br /><br />
+              <h5
+                style="
+                  text-align: center;
+                  color: black;
+                  font-weight: 400;
+                  font-size: 18px;
+                "
+              >
+                Class :
+              </h5>
+
+              <div class="d-flex flex-column">
+                <button class="series">
+                  <input
+                    type="radio"
+                    name="series"
+                    onclick="changetoseriesS()"
+                    checked
+                  />&nbsp;NOTE 13
+                </button>
+                <button class="series">
+                  <input
+                    type="radio"
+                    name="series"
+                    onclick="changetoseriesX14()"
+                  />&nbsp;Xiaomi 14|13
+                </button>
+                <button class="series">
+                  <input
+                    type="radio"
+                    name="series"
+                    onclick="changetoseriesR13c()"
+                  />&nbsp;13C|12C
+                </button>
+                <button class="series">
+                  <input
+                    type="radio"
+                    name="series"
+                    onclick="changetoseriesr12_11()"
+                  />&nbsp;NOTE 12 | 11
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <h5 style="text-align: center">Results</h5>
+              <br /><br />
+              <table class="table table-responsive-sm table-bordered">
+                <tr class="productspage">
+                  <td>
+                    <div style="justify-content: space-between; display: flex">
+                      <div>
+                        <button
+                          style="
+                            background-color: black;
+                            border-radius: 15px;
+                            color: white;
+                          "
+                        >
+                          NEW
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          onclick="like(this)"
+                          style="border: none; background-color: transparent"
+                        >
+                          <i class="fas fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img src="MI/r13+blue.webp" class="mainimage3" alt="" />
+                    </div>
+                    <a
+                      href="r13plus.html"
+                      class="btn btn-sm btn-outline-dark mx-auto d-block w-25 look"
+                    >
+                      Quick Look
+                    </a>
+                    <div class="nameofproduct3">
+                      <p class="">Redmi Note13 Pro Plus</p>
+                    </div>
+                    <div class="colordata">
+                      <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                      <p class="">
+                        <span style="font-weight: 400">Colour : </span>
+                        <span class="colors3"
+                          >Black | Coral Purple | White</span
+                        >
+                      </p>
+                    </div>
+                    <div style="display: inline">
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color31"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: black;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color32"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: plum;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color33"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: whitesmoke;
+                          "
+                        ></div>
+                      </button>
+                    </div>
+                    <p class="">
+                      <span style="font-weight: 400">STORAGE : </span
+                      ><span class="storage3"> 128GB | 256GB</span>
+                    </p>
+                    <p class="">
+                      <span style="font-weight: 400">Starting Price : </span>
+                      <span class="price3"> 25900/-</span>
+                    </p>
+
+                    <ul>
+                      <li class="text31">Dimensity 7200 Ultra 5G Processor</li>
+                      <li class="text32">
+                        200MP (OIS) + 8MP + 2MP | 16MP Front Camera
+                      </li>
+                    </ul>
+                    <a href="r13plus.html" class="btn btn-dark">Buy Now</a>
+                  </td>
+                  <td>
+                    <div style="justify-content: space-between; display: flex">
+                      <div>
+                        <button
+                          style="
+                            background-color: black;
+                            border-radius: 15px;
+                            color: white;
+                          "
+                        >
+                          NEW
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          onclick="like(this)"
+                          style="border: none; background-color: transparent"
+                        >
+                          <i class="fas fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img
+                        src="MI/r13problack.webp"
+                        class="mainimage3"
+                        alt=""
+                      />
+                    </div>
+                    <a
+                      href="r13+.html"
+                      class="btn btn-sm btn-outline-dark mx-auto d-block w-25 look"
+                    >
+                      Quick Look
+                    </a>
+                    <div class="nameofproduct3">
+                      <p class="">Redmi Note13 Pro</p>
+                    </div>
+                    <div class="colordata">
+                      <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                      <p class="">
+                        <span style="font-weight: 400">Colour : </span
+                        ><span class="colors3">Black | White | Blue</span>
+                      </p>
+                    </div>
+                    <div style="display: inline">
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color31"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: black;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color32"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: whitesmoke;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color33"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: plum;
+                          "
+                        ></div>
+                      </button>
+                    </div>
+                    <p class="">
+                      <span style="font-weight: 400">STORAGE : </span
+                      ><span class="storage3">128GB | 512GB | 256GB</span>
+                    </p>
+                    <p class="">
+                      <span style="font-weight: 400">Starting Price : </span>
+                      <span class="price3">31900/-</span>
+                    </p>
+
+                    <ul>
+                      <li class="text31">
+                        7s Gen 2 Mobile Platform 5G Processor
+                      </li>
+                      <li class="text32">5100 mAh Battery</li>
+                    </ul>
+                    <a href="" class="btn btn-dark">Buy Now</a>
+                  </td>
+                  <td>
+                    <div style="justify-content: space-between; display: flex">
+                      <div>
+                        <button
+                          style="
+                            background-color: black;
+                            border-radius: 15px;
+                            color: white;
+                          "
+                        >
+                          NEW
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          onclick="like(this)"
+                          style="border: none; background-color: transparent"
+                        >
+                          <i class="fas fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img src="MI/r13gold.webp" class="mainimage3" alt="" />
+                    </div>
+                    <a
+                      class="btn btn-sm btn-outline-dark w-25 mx-auto d-block look"
+                      href="r13.html"
+                    >
+                      Quick Look
+                    </a>
+                    <div class="nameofproduct3">
+                      <p class="">Redmi Note 13</p>
+                    </div>
+                    <div class="colordata">
+                      <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                      <p class=" ">
+                        <span style="font-weight: 400">Colour : </span>
+                        <span class="colors3"> Black | Gold | White</span>
+                      </p>
+                    </div>
+                    <div style="display: inline">
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color31"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: gold;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color32"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: whitesmoke;
+                          "
+                        ></div>
+                      </button>
+                      <button
+                        style="border: none; background-color: transparent"
+                      >
+                        <div
+                          class="color33"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: black;
+                          "
+                        ></div>
+                      </button>
+                    </div>
+                    <p class=" ">
+                      <span style="font-weight: 400">STORAGE : </span
+                      ><span class="storage3">128GB | 256GB</span>
+                    </p>
+                    <p class="">
+                      <span style="font-weight: 400">Starting Price : </span>
+                      <span class="price3"> 17900/-</span>
+                    </p>
+
+                    <ul>
+                      <li class="text31">108MP Rear Camera</li>
+                      <li class="text32">
+                        16.94 cm (6.67 inch) Full HD+ Display
+                      </li>
+                    </ul>
+                    <a href="r13.html" class="btn btn-dark">Buy Now</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane container-fluid" id="op">
+        <div class="row">
+          <div class="col-lg-2">
+            <h5 style="text-align: center">
+              <i class="fas fa-filter"></i>&nbsp;Filters
+            </h5>
+            <br /><br /><br />
+            <h5
+              style="
+                text-align: center;
+                color: black;
+                font-weight: 400;
+                font-size: 18px;
+              "
+            >
+              Class :
+            </h5>
+
+            <div class="d-flex flex-column">
+              <button class="series">
+                <input
+                  type="radio"
+                  name="series"
+                  onclick="changetoseriesopR()"
+                  checked
+                />&nbsp;R Series
+              </button>
+              <button class="series">
+                <input
+                  type="radio"
+                  name="series"
+                  onclick="changetoseriesopnord()"
+                />&nbsp;NORD Series
+              </button>
+              <button class="series">
+                <input
+                  type="radio"
+                  name="series"
+                  onclick="changetoseriesopen()"
+                />&nbsp;OPEN
+              </button>
+              <button class="series">
+                <input
+                  type="radio"
+                  name="series"
+                  onclick="changetoseriesoppro()"
+                />&nbsp;OnePlus PRO
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <h5 style="text-align: center">Results</h5>
+            <br /><br />
+            <table class="table table-responsive-sm table-bordered">
+              <tr class="productspage">
+                <td>
+                  <div style="justify-content: space-between; display: flex">
+                    <div>
+                      <button
+                        style="
+                          background-color: black;
+                          border-radius: 15px;
+                          color: white;
+                        "
+                      >
+                        NEW
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        onclick="like(this)"
+                        style="border: none; background-color: transparent"
+                      >
+                        <i class="fas fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img
+                      src="ONEPLUS/op12rblack.webp"
+                      class="mainimage4"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    href="op12r.html"
+                    class="btn btn-sm btn-outline-dark mx-auto w-25 d-block look"
+                  >
+                    Quick Look
+                  </a>
+                  <div class="nameofproduct4">
+                    <p class="">OnePlus 12R</p>
+                  </div>
+                  <div class="colordata">
+                    <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                    <p class="">
+                      <span style="font-weight: 400">Colour : </span>
+                      <span class="colors4">Black | Blue </span>
+                    </p>
+                  </div>
+                  <div style="display: inline">
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color41"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: black;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color42"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: lightblue;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color43"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: transparent;
+                        "
+                      ></div>
+                    </button>
+                  </div>
+                  <p class="">
+                    <span style="font-weight: 400">STORAGE : </span
+                    ><span class="storage4"> 128GB | 256GB</span>
+                  </p>
+                  <p class="">
+                    <span style="font-weight: 400">Starting Price : </span>
+                    <span class="price4"> 38900/-</span>
+                  </p>
+
+                  <ul>
+                    <li class="text41">17.22 cm (6.78 inch) Display</li>
+                    <li class="text42">5500 mAh Battery</li>
+                  </ul>
+                  <a href="op12r.html" class="btn btn-dark">Buy Now</a>
+                </td>
+                <td>
+                  <div style="justify-content: space-between; display: flex">
+                    <div>
+                      <button
+                        style="
+                          background-color: black;
+                          border-radius: 15px;
+                          color: white;
+                        "
+                      >
+                        NEW
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        onclick="like(this)"
+                        style="border: none; background-color: transparent"
+                      >
+                        <i class="fas fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img
+                      src="ONEPLUS/op11rblue.webp"
+                      class="mainimage4"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    class="btn btn-sm w-25 btn-outline-dark mx-auto d-block look"
+                    href="op11r.html"
+                  >
+                    Quick Look
+                  </a>
+                  <div class="nameofproduct4">
+                    <p class="">OnePlus 11R</p>
+                  </div>
+                  <div class="colordata">
+                    <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                    <p class="">
+                      <span style="font-weight: 400">Colour : </span
+                      ><span class="colors4">Black | Blue</span>
+                    </p>
+                  </div>
+                  <div style="display: inline">
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color41"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: black;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color42"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: whitesmoke;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color43"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: transparent;
+                        "
+                      ></div>
+                    </button>
+                  </div>
+                  <p class="">
+                    <span style="font-weight: 400">STORAGE : </span
+                    ><span class="storage4">128GB | 256GB</span>
+                  </p>
+                  <p class="">
+                    <span style="font-weight: 400">Starting Price : </span>
+                    <span class="price4">37900/-</span>
+                  </p>
+
+                  <ul>
+                    <li class="text41">17.02 cm Display</li>
+                    <li class="text42">5000 mAh Battery</li>
+                  </ul>
+                  <a href="op11r.html" class="btn btn-dark">Buy Now</a>
+                </td>
+                <td>
+                  <div style="justify-content: space-between; display: flex">
+                    <div>
+                      <button
+                        style="
+                          background-color: black;
+                          border-radius: 15px;
+                          color: white;
+                        "
+                      >
+                        NEW
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        onclick="like(this)"
+                        style="border: none; background-color: transparent"
+                      >
+                        <i class="fas fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img
+                      src="ONEPLUS/op10rgreen.webp"
+                      class="mainimage4"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    class="btn btn-sm w-25 btn-outline-dark mx-auto d-block look"
+                    href="op10r.html"
+                  >
+                    Quick Look
+                  </a>
+                  <div class="nameofproduct4">
+                    <p class="">OnePlus 10R</p>
+                  </div>
+                  <div class="colordata">
+                    <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                    <p class=" ">
+                      <span style="font-weight: 400">Colour : </span>
+                      <span class="colors4"> Black | Green</span>
+                    </p>
+                  </div>
+                  <div style="display: inline">
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color41"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: black;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color42"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: green;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color43"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: transparent;
+                        "
+                      ></div>
+                    </button>
+                  </div>
+                  <p class=" ">
+                    <span style="font-weight: 400">STORAGE : </span
+                    ><span class="storage4">128GB | 256GB</span>
+                  </p>
+                  <p class="">
+                    <span style="font-weight: 400">Starting Price : </span>
+                    <span class="price4"> 31900/-</span>
+                  </p>
+
+                  <ul>
+                    <li class="text41">5000 mAh Battery</li>
+                    <li class="text42">17.02 cm Display</li>
+                  </ul>
+                  <a href="op10r.html" class="btn btn-dark">Buy Now</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane container-fluid" id="vivo">
+        <div class="row">
+          <div class="col-lg-2">
+            <h5 style="text-align: center">
+              <i class="fas fa-filter"></i>&nbsp;Filters
+            </h5>
+            <br /><br /><br />
+            <h5
+              style="
+                text-align: center;
+                color: black;
+                font-weight: 400;
+                font-size: 18px;
+              "
+            >
+              Class :
+            </h5>
+
+            <div class="d-flex flex-column">
+              <button class="series">
+                <input
+                  type="radio"
+                  name="series"
+                  onclick="changetoseriesvT()"
+                  checked
+                />&nbsp;T Series
+              </button>
+              <button class="series">
+                <input
+                  type="radio"
+                  name="series"
+                  onclick="changetoseriesvV()"
+                />&nbsp;V Series
+              </button>
+              <button class="series">
+                <input
+                  type="radio"
+                  name="series"
+                  onclick="changetoseriesvx()"
+                />&nbsp;X Series
+              </button>
+              <button class="series">
+                <input
+                  type="radio"
+                  name="series"
+                  onclick="changetoseriesvY()"
+                />&nbsp;Y Series
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <h5 style="text-align: center">Results</h5>
+            <br /><br />
+            <table class="table table-responsive-sm table-bordered">
+              <tr class="productspage">
+                <td>
+                  <div style="justify-content: space-between; display: flex">
+                    <div>
+                      <button
+                        style="
+                          background-color: black;
+                          border-radius: 15px;
+                          color: white;
+                        "
+                      >
+                        NEW
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        onclick="like(this)"
+                        style="border: none; background-color: transparent"
+                      >
+                        <i class="fas fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="VIVO/vt2black.webp" class="mainimage5" alt="" />
+                  </div>
+                  <button
+                    class="btn btn-sm btn-outline-dark mx-auto d-block look"
+                    data-bs-toggle="modal"
+                    data-bs-target="#products"
+                    onclick="modalimage('Samsung/s24+black.jpeg','Samsung/s24+black2.png','Samsung/s24+black3.webp','Samsung/s24+.jpg')"
+                  >
+                    Quick Look
+                  </button>
+                  <div class="nameofproduct5">
+                    <p class="">Vivo T2X 5G</p>
+                  </div>
+                  <div class="colordata">
+                    <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                    <p class="">
+                      <span style="font-weight: 400">Colour : </span>
+                      <span class="colors5">Black | Blue | Gold</span>
+                    </p>
+                  </div>
+                  <div style="display: inline">
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color51"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: black;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color52"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: lightblue;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color53"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: gold;
+                        "
+                      ></div>
+                    </button>
+                  </div>
+                  <p class="">
+                    <span style="font-weight: 400">STORAGE : </span
+                    ><span class="storage5"> 128GB | 64GB</span>
+                  </p>
+                  <p class="">
+                    <span style="font-weight: 400">Starting Price : </span>
+                    <span class="price5"> 11900/-</span>
+                  </p>
+
+                  <ul>
+                    <li class="text51">16.71 cm (6.58 inch) Display</li>
+                    <li class="text52">5000 mAh Battery</li>
+                  </ul>
+                  <a href="" class="btn btn-dark">Buy Now</a>
+                </td>
+                <td>
+                  <div style="justify-content: space-between; display: flex">
+                    <div>
+                      <button
+                        style="
+                          background-color: black;
+                          border-radius: 15px;
+                          color: white;
+                        "
+                      >
+                        NEW
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        onclick="like(this)"
+                        style="border: none; background-color: transparent"
+                      >
+                        <i class="fas fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="VIVO/vt2gold.webp" class="mainimage5" alt="" />
+                  </div>
+                  <button
+                    class="btn btn-sm btn-outline-dark mx-auto d-block look"
+                    data-bs-toggle="modal"
+                    data-bs-target="#products"
+                    onclick="modalimage('Samsung/s231.jpg','Samsung/s232.png','Samsung/s233.png','Samsung/s234.png')"
+                  >
+                    Quick Look
+                  </button>
+                  <div class="nameofproduct5">
+                    <p class="">Vivo T2</p>
+                  </div>
+                  <div class="colordata">
+                    <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                    <p class="">
+                      <span style="font-weight: 400">Colour : </span
+                      ><span class="colors5">Black | Gold</span>
+                    </p>
+                  </div>
+                  <div style="display: inline">
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color51"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: black;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color52"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: gold;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color53"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: transparent;
+                        "
+                      ></div>
+                    </button>
+                  </div>
+                  <p class="">
+                    <span style="font-weight: 400">STORAGE : </span
+                    ><span class="storage5">128GB | 64GB</span>
+                  </p>
+                  <p class="">
+                    <span style="font-weight: 400">Starting Price : </span>
+                    <span class="price5">17900/-</span>
+                  </p>
+
+                  <ul>
+                    <li class="text51">16.21 cm Display</li>
+                    <li class="text52">4500 mAh Battery</li>
+                  </ul>
+                  <a href="" class="btn btn-dark">Buy Now</a>
+                </td>
+                <td>
+                  <div style="justify-content: space-between; display: flex">
+                    <div>
+                      <button
+                        style="
+                          background-color: black;
+                          border-radius: 15px;
+                          color: white;
+                        "
+                      >
+                        NEW
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        onclick="like(this)"
+                        style="border: none; background-color: transparent"
+                      >
+                        <i class="fas fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="VIVO/vt3blue.webp" class="mainimage5" alt="" />
+                  </div>
+                  <a
+                    class="btn btn-sm w-25 btn-outline-dark mx-auto d-block look"
+                    href="vt3.html"
+                  >
+                    Quick Look
+                  </a>
+                  <div class="nameofproduct5">
+                    <p class="">Vivo T3</p>
+                  </div>
+                  <div class="colordata">
+                    <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                    <p class=" ">
+                      <span style="font-weight: 400">Colour : </span>
+                      <span class="colors5"> Black | Blue</span>
+                    </p>
+                  </div>
+                  <div style="display: inline">
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color51"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: black;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color52"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: lightblue;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color53"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: transparent;
+                        "
+                      ></div>
+                    </button>
+                  </div>
+                  <p class=" ">
+                    <span style="font-weight: 400">STORAGE : </span
+                    ><span class="storage5">128GB | 64GB</span>
+                  </p>
+                  <p class="">
+                    <span style="font-weight: 400">Starting Price : </span>
+                    <span class="price5"> 19900/-</span>
+                  </p>
+
+                  <ul>
+                    <li class="text51">5000 mAh Battery</li>
+                    <li class="text52">16.94 cm Display</li>
+                  </ul>
+                  <a href="vt3.html" class="btn btn-dark">Buy Now</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="tab-pane container-fluid" id="vivo"></div> -->
+    </div>
+    <!-- </div> -->
+    <div class="quicklook">
+      <div class="modal fade" id="products">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <div></div> -->
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div
+              class="modal-body"
+              style="display: flex; justify-content: space-between"
+            >
+              <div class="imgofproduct">
+                <img src="Samsung/s24+black.jpeg" id="imageproduct" alt="" />
+              </div>
+              <div>
+                <div class="container">
+                  <h4 id="name">Samsung S24 Ultra</h4>
+                  <br />
+                  <!-- <h4>PRICE : <span>10000</span></h4> -->
+                  <div id="colours">Black | Grey | Violet</div>
+                  <br />
+
+                  <table class="table table-responsive-sm table-bordered">
+                    <tr>
+                      <th>Storage</th>
+                      <th>Price</th>
+                    </tr>
+                    <tr>
+                      <td>512GB</td>
+                      <td class="prices">139900/-</td>
+                    </tr>
+                    <tr>
+                      <td>256GB</td>
+                      <td class="prices">129900/-</td>
+                    </tr>
+                    <tr>
+                      <td>1TB</td>
+                      <td class="prices">159900/-</td>
+                    </tr>
+                  </table>
+                  <br />
+                  <table
+                    class="table table-responsive-sm table-bordered rounded-3"
+                  >
+                    <tr>
+                      <td>Processor</td>
+                      <td id="processor">Octa Core</td>
+                    </tr>
+                    <tr>
+                      <td>Camera</td>
+                      <td id="camera">
+                        200.0 MP + 50.0 MP + 12.0 MP + 10.0 MP
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Display</td>
+                      <td id="display">17.25 cm full rectangle</td>
+                    </tr>
+                    <tr>
+                      <td>System</td>
+                      <td id="system">Android</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <div></div> -->
+              <button class="btn btn-dark" data-bs-dismiss="modal">
+                Close
+              </button>
+              <a class="btn btn-dark" href="#">Order ! </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <!-- footer start -->
+    <div class="footer_main">
+      <div class="footer_child">
+        <h3>Product & Services</h3>
+        <ul>
+          <li><a href="">SmartPhones</a></li>
+          <li><a href="">Tablets</a></li>
+          <li><a href="">Audio Sounds</a></li>
+          <li><a href="">Mobiles</a></li>
+          <li><a href="">SmartPhones</a></li>
+          <li><a href="">Memory Storage</a></li>
+          <li><a href="">Accessories</a></li>
+          <li><a href="">Smart Club</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Student Advantages</a></li>
+        </ul>
+      </div>
+      <div class="footer_child">
+        <h3>Account & Community</h3>
+        <ul>
+          <li><a href="">My Page</a></li>
+          <li><a href="">My Products</a></li>
+          <li><a href="">Orders</a></li>
+          <li><a href="">Wishlist</a></li>
+          <li><a href="">Voucher</a></li>
+          <li><a href="">My Referrais</a></li>
+          <li><a href="">Serivce</a></li>
+          <li><a href=""> Community</a></li>
+        </ul>
+      </div>
+      <div class="footer_child">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="">Whatsapp us</a></li>
+          <li><a href="">Sign Language</a></li>
+          <li><a href="">Email us</a></li>
+          <li><a href="">Call us</a></li>
+          <li><a href="">Email the CEO</a></li>
+          <li><a href="">Community</a></li>
+          <li><a href="">Registration</a></li>
+          <li><a href="">Track Repair </a></li>
+          <li><a href="">Service Center</a></li>
+          <li><a href="">Share Your Opinion</a></li>
+        </ul>
+      </div>
+      <div class="footer_child">
+        <h3>About us</h3>
+        <ul>
+          <li><a href="">Company info</a></li>
+          <li><a href="">Business Area</a></li>
+          <li><a href="">Brand Identity</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Investor Relations</a></li>
+          <li><a href="">NewsRoom</a></li>
+          <li><a href="">Ethics</a></li>
+          <li><a href="">Smart Club</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Samsung Design</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="footer_content">
+      <p>Copyright ⓒ 1995-2024 @SMARTTECHS All Rights reserved.</p>
+      <br />
+      <p>
+        Please dispose of e-waste and plastic waste responsibly. For more
+        information or e-waste pick up, please call 1800 5 7267864 or click here
+        for more details
+      </p>
+      <br />
+      <p>
+        Registered Office Address: Ranip , Ahmedabad-382470 <br />
+        Corporate Identification Number (CIN): U31900DL1995PTC071387
+      </p>
+    </div>
+    <hr />
+    <br />
+    <div class="footer_base">
+      <div class="c1">
+        <ul>
+          <li>Privacy</li>
+          <li>Legal</li>
+          <li>Policy</li>
+          <li>Sitemap</li>
+        </ul>
+      </div>
+      <div class="c2">
+        <ul>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-facebook"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
+          <li><i class="fab fa-whatsapp"></i></li>
+          <li><i class="fab fa-linkedin"></i></li>
+        </ul>
+      </div>
+    </div>
+    <!-- footer end -->
+
+    <script src="explore.js"></script>
+  </body>
+</html>

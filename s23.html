@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samsung S23</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="mg2/applelogo-removebg-preview.png" />
+    <style>
+      h5,
+      p {
+        margin-top: 5px;
+        padding: 5px 10px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .needs-validation input,
+      textarea,
+      button {
+        margin-top: 15px;
+        padding: 10px 10px;
+      }
+
+      ::placeholder {
+        color: black;
+        font-size: 20px;
+      }
+      #billdata {
+        border: 2px solid black;
+        align-items: center;
+      }
+      #billdata span {
+        font-weight: lighter;
+      }
+      .colors a {
+        margin-left: 5px;
+      }
+      .colors {
+        /* background-color: red; */
+        margin-top: 20px;
+        display: grid;
+        place-items: center;
+      }
+      .colors button {
+        border: none;
+        background-color: transparent;
+      }
+      .arr {
+        font-size: 50px;
+        text-decoration: none;
+        color: rgb(112, 105, 105);
+      }
+      .arr:hover {
+        color: black;
+      }
+      #bill {
+        background-color: #f1f2f3;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <br /><br />
+    <div class="container fixed-top w-100 bg-white">
+      <a href="index.html" class="arr"
+        >&larr;<span style="font-size: 25px">Home</span></a
+      >
+    </div>
+    <br /><br />
+    <div class="container" id="i15data">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="mobileimage" style="display: grid; place-items: center">
+              <img
+                id="product"
+                src="mg2/s23n.jpeg.jpg"
+                style="width: 70%; height: 500px"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <br /><br />
+
+          <div style="display: grid; place-items: center; margin-top: 130px">
+            <div class="colors" style="display: flex">
+              <h5 style="text-align: center">Available Colours</h5>
+              <button onclick="s23('Samsung/s23fegreen.jpeg')">
+                <div
+                  style="
+                    background-color: lightgreen;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                  "
+                ></div>
+              </button>
+              <button href="" onclick="s23('Samsung/s23feviolet.jpeg')">
+                <div
+                  style="
+                    background-color: violet;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                  "
+                ></div>
+              </button>
+              <button href="" onclick="s23('Samsung/s23feblack.jpeg')">
+                <div
+                  style="
+                    background-color: black;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                  "
+                ></div>
+              </button>
+              <button href="" onclick="s23('mg2/s23n.jpeg.jpg')">
+                <div
+                  style="
+                    background-color: white;
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid;
+                    border-radius: 50%;
+                    border-color: black;
+                  "
+                ></div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <h3 style="text-align: center; font-weight: bold" id="brand">
+            Samsung S23
+          </h3>
+          <br /><br />
+          <table class="table">
+            <tr>
+              <th>Modal</th>
+              <td id="modal">S23</td>
+            </tr>
+            <tr>
+              <th>Available Colors</th>
+              <td>Black Green Violet</td>
+            </tr>
+            <tr>
+              <th>Operating System</th>
+              <td>Android</td>
+            </tr>
+            <tr>
+              <th>Storage</th>
+              <td>128GB 256GB 512GB 1TB</td>
+            </tr>
+            <tr>
+              <th>Camera</th>
+              <td>50MP main + 12MP wide| 7 pro lense</td>
+            </tr>
+            <tr>
+              <th>Battery</th>
+              <td>4000 mAH</td>
+            </tr>
+            <tr>
+              <th>Processor</th>
+              <td>Exynos 2400 | Deca Core | 3.2GHz</td>
+            </tr>
+            <tr>
+              <th>Display</th>
+              <td>6 inch Dynamic AMOLED 2x</td>
+            </tr>
+          </table>
+          <br />
+          <div class="row">
+            <div class="col-sm-6">
+              <h5 style="text-align: left">What is in Box ?</h5>
+              <ul style="list-style: none; text-align: left; margin-left: 30px">
+                <br />
+                <li>Handset</li>
+                <li>USB-C Charge Cable (1 m)</li>
+                <li>USB Type-C cable</li>
+                <li>Sim Ejector</li>
+                <li>Warranty Card</li>
+              </ul>
+              <button
+                class="btn btn-outline-dark w-100 mt-5"
+                onclick="addcart()"
+              >
+                Add to Cart
+              </button>
+            </div>
+            <div class="col-sm-6">
+              <table class="table table-borderless">
+                <tr>
+                  <th>RAM</th>
+                  <th>Price</th>
+                </tr>
+                <tr>
+                  <td>8GB/128Gb</td>
+                  <td>65,000</td>
+                </tr>
+                <tr>
+                  <td>8GB/256Gb</td>
+                  <td>70,000</td>
+                </tr>
+                <tr>
+                  <td>12GB/512GB</td>
+                  <td>80,000</td>
+                </tr>
+                <tr>
+                  <td>8GB/1TB</td>
+                  <td>97,000</td>
+                </tr>
+              </table>
+              <br />
+              <a
+                href="#purchase"
+                class="btn btn-outline-dark d-block mx-auto mt-3 w-100"
+                onclick="billing()"
+              >
+                Buy Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div id="purchase"></div>
+    <div class="container">
+      <!-- <form action="" id="confirmationForm" id="confirm"> -->
+
+      <br />
+      <h4 style="text-align: center; margin-top: 5px; font-size: 40px">
+        Product Purchasing...
+      </h4>
+      <br />
+      <div class="container" id="bill">
+        <br /><br />
+        <form action="" id="my-form" class="needs-validation">
+          <h5>
+            Brand : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="brand2"></span>
+          </h5>
+          <h5>
+            Modal : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="modal2"></span>
+          </h5>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Product Owner Name"
+            id="username"
+            required
+          />
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Owner Contact Number"
+            id="contact"
+            required
+          />
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Quantity"
+            id="qunt"
+            value="1"
+            required
+          />
+          <textarea
+            class="form-control"
+            name=""
+            id="address"
+            cols="10"
+            rows="5"
+            placeholder="Address"
+            required
+          ></textarea>
+          <div style="display: flex; margin-left: 5px">
+            <div style="padding: 10px">
+              <input
+                type="radio"
+                name="colour"
+                value="Black"
+                class="form-check-inline"
+                id="colour"
+              />&nbsp;Black
+            </div>
+
+            <div style="padding: 10px">
+              <input
+                type="radio"
+                name="colour"
+                class="form-check-inline"
+                value="Green"
+                id="colour"
+              />&nbsp;Green
+            </div>
+
+            <div style="padding: 10px">
+              <input
+                type="radio"
+                name="colour"
+                class="form-check-inline"
+                id="colour"
+                value="violet"
+              />&nbsp;Violet
+            </div>
+          </div>
+          <br />
+          <div style="display: flex; margin-left: 5px">
+            <div style="padding: 10px">
+              <input
+                type="radio"
+                name="ram"
+                id="ram"
+                class="form-check-inline"
+                value="8GB|128GB"
+                onclick="price('8GB|128GB')"
+              />&nbsp;8GB|128GB
+            </div>
+
+            <div style="padding: 10px">
+              <input
+                type="radio"
+                id="ram"
+                name="ram"
+                class="form-check-inline"
+                value="8GB|256GB"
+                onclick="price('8GB|256GB')"
+              />&nbsp;8GB|256GB
+            </div>
+
+            <div style="padding: 10px">
+              <input
+                type="radio"
+                id="ram"
+                name="ram"
+                class="form-check-inline"
+                value="12GB|512GB"
+                onclick="price('12GB|512GB')"
+              />&nbsp;12GB|512GB
+            </div>
+          </div>
+          <h5>
+            Bill Amount : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="Amount"></span>
+          </h5>
+          <br /><br />
+          <h5>
+            Select Payment Method :&nbsp;&nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              value="offline"
+              name="offline"
+              onclick="payment()"
+            />&nbsp;&nbsp;
+            <span style="font-weight: lighter">Payment On Delivery</span
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              value="offline"
+              name="offline"
+              onclick="onlinepayment()"
+            />&nbsp;&nbsp;
+            <span style="font-weight: lighter">Online</span>
+          </h5>
+          <p id="payment" class="text-success"></p>
+          <div id="payment2"></div>
+
+          <div style="display: flex; place-items: center">
+            <button class="btn btn-dark" onclick="checkstatus()">Done</button>
+            <button class="btn btn-dark mx-3" onclick="checkstatus2()">
+              BUY
+            </button>
+          </div>
+          <br />
+          <p id="status1"></p>
+          <p id="status2"></p>
+        </form>
+        <!-- </div> -->
+        <br />
+        <br />
+
+        <!-- </form> -->
+        <!-- </div> -->
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="container" id="billdata">
+      <h3 style="text-align: center; font-weight: bolder">Bill</h3>
+      <p>Purchaser Name : <span id="uname"></span></p>
+      <p>Contact : <span id="connum"></span></p>
+      <p>Quantity : <span id="qnt"></span></p>
+      <p>RAM|STORAGE : <span id="storage"></span></p>
+      <p>Colour : <span id="color"></span></p>
+      <p>Bill Amount : <span id="amt"></span></p>
+      <p>Buyer Address : <span id="add"></span></p>
+      <p>Time : <span id="time"></span></p>
+      <br />
+      <div class="container d-block mx-auto" style="border: 2px solid #007bff">
+        <h3
+          id="thankyou"
+          class="text-center text-primary"
+          style="
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+          "
+        ></h3>
+      </div>
+    </div>
+    <!-- <script src="js/product.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>

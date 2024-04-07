@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="mg2/applelogo-removebg-preview.png" />
+  </head>
+  <style>
+    .container p {
+      font-size: 20px;
+      padding-top: 10px;
+      font-weight: bold;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    body {
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <script src="script.js"></script>
+  <body>
+    <div class="container" id="bill">
+      <br /><br />
+      <form action="" id="my-form" class="needs-validation">
+        <h5>
+          Brand : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="brand2"></span>
+        </h5>
+        <h5>
+          Colour : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="c2"></span>
+        </h5>
+        <h5>
+          Modal : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="modal2"></span>
+        </h5>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Product Owner Name"
+          id="username"
+          required
+        />
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Owner Contact Number"
+          id="contact"
+          required
+        />
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Quantity"
+          id="qunt"
+          required
+        />
+        <textarea
+          class="form-control"
+          name=""
+          id="address"
+          cols="10"
+          rows="5"
+          placeholder="Address"
+          required
+        ></textarea>
+        <h5>
+          Bill Amount : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="Amount"></span>
+        </h5>
+        <br /><br />
+        <h5>
+          Select Payment Method :&nbsp;&nbsp;&nbsp;&nbsp;
+          <input
+            type="radio"
+            value="offline"
+            name="offline"
+            onclick="payment()"
+          />&nbsp;&nbsp;
+          <span style="font-weight: lighter">Payment On Delivery</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input
+            type="radio"
+            value="offline"
+            name="offline"
+            onclick="onlinepayment()"
+          />&nbsp;&nbsp;
+          <span style="font-weight: lighter">Online</span>
+        </h5>
+        <p id="payment" class="text-success"></p>
+        <div id="payment2"></div>
+        <br /><br /><br />
+        <!-- <div class="container" id="billdata">
+      <p id="uname"></p>
+      <p id="connum"></p>
+      <p id="qnt"></p>
+      <p id="storage"></p>
+      <p id="color"></p>
+      <p id="amt"></p>
+      <p id="time"></p>
+    </div> -->
+      </form>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="container" id="billdata">
+      <h3 style="text-align: center; font-weight: bolder">Bill</h3>
+      <p>Purchaser Name : <span id="uname"></span></p>
+      <p>Contact : <span id="connum"></span></p>
+      <p>Quantity : <span id="qnt"></span></p>
+      <p>RAM|STORAGE : <span id="storage"></span></p>
+      <p>Colour : <span id="color"></span></p>
+      <p>Bill Amount : <span id="amt"></span></p>
+      <p>Time : <span id="time"></span></p>
+    </div>
+  </body>
+</html>

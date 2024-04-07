@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samsung</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <script src="script.js"></script> -->
+    <link rel="icon" href="mg2/applelogo-removebg-preview.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      body {
+        background-color: #f5f4f6;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .nav li a {
+        font-size: 1rem;
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .cont {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f5f4f6;
+        height: 50px;
+        /* justify-content: center; */
+        align-items: center;
+      }
+      #bestproduct {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
+        gap: 10px;
+      }
+      #bestproduct div img {
+        width: max-content;
+        height: 300px;
+        margin-top: 10px;
+      }
+      #bestproduct div {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: #eff0f0;
+        border-radius: 20px;
+      }
+      #bestproduct > div:hover {
+        border: 2px dotted black;
+        box-shadow: 0 0 50px #4a4949;
+      }
+      #bestproduct div p {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 5px;
+      }
+      .heading h3,
+      p {
+        text-align: center;
+      }
+      .productspage {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
+        gap: 10px;
+      }
+      .productspage td:hover {
+        border: 2px dotted black;
+      }
+      .image {
+        display: grid;
+        place-items: center;
+      }
+      .image img {
+        width: 200px;
+        height: 200px;
+      }
+      .look {
+        margin-top: 10px;
+        background-color: transparent;
+        border-radius: 20px;
+      }
+      #appleshow .carousel-item {
+        margin-top: 100px;
+        width: 100%;
+        /* height: 100vh; */
+      }
+
+      .carousel-item video {
+        width: 10vw;
+        height: 500px;
+      }
+      .carousel-item img {
+        width: 100%;
+        height: 500px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .nav {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: end;
+        }
+        .nav li a {
+          font-size: 14px;
+        }
+        #bestproduct {
+          grid-template-columns: 1fr;
+        }
+        .productspage {
+          grid-template-columns: 1fr;
+          /* Other grid styling if needed */
+        }
+        .productspage td {
+          margin-top: 20px;
+        }
+        .productspage td:hover {
+          border: 2px dotted black;
+        }
+      }
+
+      .footer_main {
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Three columns with equal width */
+        gap: 10px;
+        margin-top: 10px;
+        padding: 20px;
+      }
+      .footer_main .footer_child {
+        padding: 10px;
+        /* border: 2px solid black; */
+      }
+      .footer_child h3 {
+        font-size: 20px;
+      }
+      .footer_child ul {
+        margin-top: 20px;
+        list-style: none;
+      }
+      .footer_child ul li a {
+        color: rgb(91, 87, 87);
+        text-decoration: none;
+        font-weight: light;
+        transition: 0.2s ease;
+      }
+      .footer_child ul li a:hover {
+        color: black;
+      }
+      .footer_content p {
+        color: rgb(91, 87, 87);
+        margin-left: 10px;
+        /* font-size: 100px; */
+      }
+      .footer_base {
+        display: flex;
+        /* justify-content: space-between; */
+      }
+      .footer_base ul {
+        display: flex;
+        list-style: none;
+      }
+      .footer_base ul li {
+        margin-left: 15px;
+      }
+      @media screen and (max-width: 768px) {
+        .footer_main {
+          grid-template-columns: 1fr;
+        }
+        .footer_content {
+          display: block;
+        }
+        .footer_content p {
+          text-align: justify;
+        }
+        .footer_base {
+          display: block;
+        }
+      }
+      .back-to-top {
+        position: fixed;
+        display: block;
+        right: 45px;
+        bottom: 45px;
+        z-index: 99;
+      }
+    </style>
+    <script src="explore.js"></script>
+  </head>
+  <body data-bs-spy="scroll">
+    <div class="container-fluid cont fixed-top">
+      <div style="margin-top: 5px">
+        <a
+          href="index.html"
+          style="
+            text-align: left;
+            text-decoration: none;
+            color: rgb(33, 33, 33);
+          "
+          ><i class="fas fa-arrow-alt-circle-left"></i>&nbsp;Home</a
+        >
+      </div>
+      <ul class="nav">
+        <li><a href="#product">Best Products</a></li>
+        <li><a href="#samsung">Explore all</a></li>
+      </ul>
+      <!-- <hr size="2px" color="black" /> -->
+    </div>
+    <br /><br />
+    <div
+      class="carousel slide container-fluid"
+      data-bs-ride="carousel"
+      id="samsungshow"
+    >
+      <div class="carousel-indicators">
+        <button
+          class="active"
+          data-bs-slide-to="0"
+          data-bs-target="#samsungshow"
+          style="background-color: rgba(255, 255, 255, 0.4)"
+        ></button>
+        <button
+          class=""
+          data-bs-slide-to="1"
+          data-bs-target="#samsungshow"
+        ></button>
+        <button
+          class=""
+          data-bs-slide-to="2"
+          data-bs-target="#samsungshow"
+        ></button>
+        <button
+          class=""
+          data-bs-slide-to="3"
+          data-bs-target="#samsungshow"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video
+            autoplay
+            loop
+            muted
+            style="object-fit: cover; width: 100%; height: 500px"
+          >
+            <source src="Samsung/s23v.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Samsung/sA25.jpeg"
+            class="d-block mx-auto"
+            style="height: 500px"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Samsung/sfold.jpeg"
+            class="d-block mx-auto"
+            style="height: 500px"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <video
+            autoplay
+            loop
+            muted
+            style="object-fit: cover; width: 100%; height: 500px"
+          >
+            <source src="Samsung/stabv.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="" id="product"></div>
+    <br /><br /><br /><br />
+    <br /><br /><br />
+    <div class="heading">
+      <h3>Top Selling</h3>
+      <p>Products</p>
+    </div>
+
+    <br /><br />
+    <div class="" id="bestproduct">
+      <div>
+        <img src="Samsung/s24+violet.jpeg" id="s24+" alt="" />
+        <p>Samsung S24 Ultra</p>
+        <div style="display: flex">
+          <button
+            style="border: none; background-color: transparent"
+            onmouseover="changeMobileS24ultra('Samsung/s24+black.jpeg')"
+          >
+            <div
+              class="color1"
+              style="
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: black;
+              "
+            ></div>
+          </button>
+          <button
+            style="border: none; background-color: transparent"
+            onmouseover="changeMobileS24ultra('Samsung/s24+grey.jpeg')"
+          >
+            <div
+              class="color2"
+              style="
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: grey;
+              "
+            ></div>
+          </button>
+          <button
+            style="border: none; background-color: transparent"
+            onmouseover="changeMobileS24ultra('Samsung/s24+violet.jpeg')"
+          >
+            <div
+              class="color3"
+              style="
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: violet;
+              "
+            ></div>
+          </button>
+        </div>
+        <a href="s24+.html" class="btn btn-dark w-50 d-block mx-auto mt-2 mb-2"
+          >Buy Now</a
+        >
+      </div>
+      <div>
+        <img src="Samsung/s231.jpg" id="s23" alt="" />
+        <p>Samsung S23</p>
+        <div style="display: flex">
+          <button
+            style="border: none; background-color: transparent"
+            onmouseover="changeMobileS23('Samsung/s23feviolet.jpeg')"
+          >
+            <div
+              class="color1"
+              style="
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: violet;
+              "
+            ></div>
+          </button>
+          <button
+            style="border: none; background-color: transparent"
+            onmouseover="changeMobileS23('Samsung/s23fegreen.jpeg')"
+          >
+            <div
+              class="color2"
+              style="
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: lightgreen;
+              "
+            ></div>
+          </button>
+          <button
+            style="border: none; background-color: transparent"
+            onmouseover="changeMobileS23('Samsung/s23feblack.jpeg')"
+          >
+            <div
+              class="color3"
+              style="
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: black;
+              "
+            ></div>
+          </button>
+        </div>
+        <a href="s23.html" class="btn btn-dark w-50 d-block mx-auto mt-2 mb-2"
+          >Buy Now</a
+        >
+      </div>
+      <div>
+        <img src="Samsung/sA35black.jpeg" id="s24" alt="" />
+        <p>Samsung A35</p>
+        <div style="display: flex">
+          <button
+            style="border: none; background-color: transparent"
+            onmouseover="changeMobileS24('Samsung/sA35pink.jpeg')"
+          >
+            <div
+              class="color1"
+              style="
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: lightpink;
+              "
+            ></div>
+          </button>
+          <button
+            style="border: none; background-color: transparent"
+            onmouseover="changeMobileS24('Samsung/sA35blue.jpeg')"
+          >
+            <div
+              class="color2"
+              style="
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: lightblue;
+              "
+            ></div>
+          </button>
+          <button
+            style="border: none; background-color: transparent"
+            onmouseover="changeMobileS24('Samsung/sA35black.jpeg')"
+          >
+            <div
+              class="color3"
+              style="
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: black;
+              "
+            ></div>
+          </button>
+        </div>
+        <a
+          href="samsung.html#samsung"
+          class="btn btn-dark w-50 d-block mx-auto mt-2 mb-2"
+          >Buy Now</a
+        >
+      </div>
+    </div>
+    <br /><br />
+    <br /><br /><br />
+    <div class="heading">
+      <h3>All Products</h3>
+      <p>Available</p>
+    </div>
+    <br />
+    <div class="tab-pane container-fluid active" id="samsung">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2">
+            <h5 style="text-align: center">
+              <i class="fas fa-filter"></i>&nbsp;Filters
+            </h5>
+            <br /><br /><br />
+            <h5
+              style="
+                text-align: center;
+                color: black;
+                font-weight: 400;
+                font-size: 18px;
+              "
+            >
+              Class :
+            </h5>
+
+            <div class="d-flex flex-column">
+              <button class="series">
+                <input
+                  type="radio"
+                  name="series"
+                  onclick="changetoseriesS()"
+                  checked
+                />&nbsp;Galaxy S
+              </button>
+              <button class="series">
+                <input
+                  type="radio"
+                  name="series"
+                  onclick="changetoseriesA()"
+                />&nbsp;Galaxy A
+              </button>
+              <button class="series">
+                <input
+                  type="radio"
+                  name="series"
+                  onclick="changetoseriesM()"
+                />&nbsp;Galaxy M
+              </button>
+              <button class="series">
+                <input
+                  type="radio"
+                  name="series"
+                  onclick="changetoseriesF()"
+                />&nbsp;Galaxy F
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <h5 style="text-align: center">Results</h5>
+            <br /><br />
+            <table class="table table-responsive-sm table-bordered">
+              <tr class="productspage">
+                <td>
+                  <div style="justify-content: space-between; display: flex">
+                    <div>
+                      <button
+                        style="
+                          background-color: black;
+                          border-radius: 15px;
+                          color: white;
+                        "
+                      >
+                        NEW
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        onclick="like(this)"
+                        style="border: none; background-color: transparent"
+                      >
+                        <i class="fas fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img
+                      src="Samsung/s24+black.jpeg"
+                      class="mainimage"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    class="btn btn-sm w-25 btn-outline-dark mx-auto d-block look"
+                    href="s24+.html"
+                  >
+                    Quick Look
+                  </a>
+                  <div class="nameofproduct">
+                    <p class="">Samsung S24 Ultra</p>
+                  </div>
+                  <div class="colordata">
+                    <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                    <p class="">
+                      <span style="font-weight: 400">Colour : </span>
+                      <span class="colors">Black | Grey | Violet</span>
+                    </p>
+                  </div>
+                  <div style="display: inline">
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color1"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: black;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color2"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: lightgrey;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color3"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: violet;
+                        "
+                      ></div>
+                    </button>
+                  </div>
+                  <p class="">
+                    <span style="font-weight: 400">STORAGE : </span
+                    ><span class="storage"> 1TB | 512GB | 256GB</span>
+                  </p>
+                  <p class="">
+                    <span style="font-weight: 400">Starting Price : </span>
+                    <span class="price"> 139900/-</span>
+                  </p>
+
+                  <ul>
+                    <li class="text1">
+                      Industry-leading hardware meets world-changing AI
+                    </li>
+                    <li class="text2">Made with titanium. Built to last</li>
+                  </ul>
+                  <a href="s24+.html" class="btn btn-dark">Buy Now</a>
+                </td>
+                <td>
+                  <div style="justify-content: space-between; display: flex">
+                    <div>
+                      <button
+                        style="
+                          background-color: black;
+                          border-radius: 15px;
+                          color: white;
+                        "
+                      >
+                        NEW
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        onclick="like(this)"
+                        style="border: none; background-color: transparent"
+                      >
+                        <i class="fas fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img
+                      src="Samsung/s23feblack.jpeg"
+                      class="mainimage"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    href="s23.html"
+                    class="btn btn-sm w-25 btn-outline-dark mx-auto d-block look"
+                  >
+                    Quick Look
+                  </a>
+                  <div class="nameofproduct">
+                    <p>Samsung S23</p>
+                  </div>
+                  <div class="colordata">
+                    <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                    <p class="">
+                      <span style="font-weight: 400">Colour : </span
+                      ><span class="colors">Black | Green | Violet</span>
+                    </p>
+                  </div>
+                  <div style="display: inline">
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color1"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: black;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color2"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: lightgreen;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color3"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: violet;
+                        "
+                      ></div>
+                    </button>
+                  </div>
+                  <p class="">
+                    <span style="font-weight: 400">STORAGE : </span
+                    ><span class="storage">128GB | 512GB | 256GB</span>
+                  </p>
+                  <p class="">
+                    <span style="font-weight: 400">Starting Price : </span>
+                    <span class="price">69900/-</span>
+                  </p>
+
+                  <ul>
+                    <li class="text1">Snap your best night selfies yet</li>
+                    <li class="text2">
+                      Epically fast photography and gameplay
+                    </li>
+                  </ul>
+                  <a href="s23.html" class="btn btn-dark">Buy Now</a>
+                </td>
+                <td>
+                  <div style="justify-content: space-between; display: flex">
+                    <div>
+                      <button
+                        style="
+                          background-color: black;
+                          border-radius: 15px;
+                          color: white;
+                        "
+                      >
+                        NEW
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        onclick="like(this)"
+                        style="border: none; background-color: transparent"
+                      >
+                        <i class="fas fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img
+                      src="Samsung/in-galaxy-s24-plus-492657-sm-s926blbcins-539573087.avif"
+                      class="mainimage"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    class="btn btn-sm btn-outline-dark w-25 mx-auto d-block look"
+                    href="s24.html"
+                  >
+                    Quick Look
+                  </a>
+                  <div class="nameofproduct">
+                    <p>Samsung S24</p>
+                  </div>
+                  <div class="colordata">
+                    <!-- <p> <h4>Colour : </h4>Black | Grey | Violet </p> -->
+                    <p class=" ">
+                      <span style="font-weight: 400">Colour : </span>
+                      <span class="colors"> Black | Orange | Lightgreen</span>
+                    </p>
+                  </div>
+                  <div style="display: inline">
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color1"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: lightsalmon;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color2"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: lightgreen;
+                        "
+                      ></div>
+                    </button>
+                    <button style="border: none; background-color: transparent">
+                      <div
+                        class="color3"
+                        style="
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          background-color: lightblue;
+                        "
+                      ></div>
+                    </button>
+                  </div>
+                  <p class=" ">
+                    <span style="font-weight: 400">STORAGE : </span
+                    ><span class="storage">1TB | 512GB | 256GB</span>
+                  </p>
+                  <p class="">
+                    <span style="font-weight: 400">Starting Price : </span>
+                    <span class="price"> 109900/-</span>
+                  </p>
+
+                  <ul>
+                    <li class="text1">
+                      Setting the new standard of mobile, now
+                    </li>
+                    <li class="text2">Made with titanium. Built to last</li>
+                  </ul>
+                  <a href="s24.html" class="btn btn-dark">Buy Now</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <!-- footer start -->
+    <div class="footer_main">
+      <div class="footer_child">
+        <h3>Product & Services</h3>
+        <ul>
+          <li><a href="">SmartPhones</a></li>
+          <li><a href="">Tablets</a></li>
+          <li><a href="">Audio Sounds</a></li>
+          <li><a href="">Mobiles</a></li>
+          <li><a href="">SmartPhones</a></li>
+          <li><a href="">Memory Storage</a></li>
+          <li><a href="">Accessories</a></li>
+          <li><a href="">Smart Club</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Student Advantages</a></li>
+        </ul>
+      </div>
+      <div class="footer_child">
+        <h3>Account & Community</h3>
+        <ul>
+          <li><a href="">My Page</a></li>
+          <li><a href="">My Products</a></li>
+          <li><a href="">Orders</a></li>
+          <li><a href="">Wishlist</a></li>
+          <li><a href="">Voucher</a></li>
+          <li><a href="">My Referrais</a></li>
+          <li><a href="">Serivce</a></li>
+          <li><a href=""> Community</a></li>
+        </ul>
+      </div>
+      <div class="footer_child">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="">Whatsapp us</a></li>
+          <li><a href="">Sign Language</a></li>
+          <li><a href="">Email us</a></li>
+          <li><a href="">Call us</a></li>
+          <li><a href="">Email the CEO</a></li>
+          <li><a href="">Community</a></li>
+          <li><a href="">Registration</a></li>
+          <li><a href="">Track Repair </a></li>
+          <li><a href="">Service Center</a></li>
+          <li><a href="">Share Your Opinion</a></li>
+        </ul>
+      </div>
+      <div class="footer_child">
+        <h3>About us</h3>
+        <ul>
+          <li><a href="">Company info</a></li>
+          <li><a href="">Business Area</a></li>
+          <li><a href="">Brand Identity</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Investor Relations</a></li>
+          <li><a href="">NewsRoom</a></li>
+          <li><a href="">Ethics</a></li>
+          <li><a href="">Smart Club</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Samsung Design</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="footer_content">
+      <p>Copyright ⓒ 1995-2024 @SMARTTECHS All Rights reserved.</p>
+      <br />
+      <p>
+        Please dispose of e-waste and plastic waste responsibly. For more
+        information or e-waste pick up, please call 1800 5 7267864 or click here
+        for more details
+      </p>
+      <br />
+      <p>
+        Registered Office Address: Ranip , Ahmedabad-382470 <br />
+        Corporate Identification Number (CIN): U31900DL1995PTC071387
+      </p>
+    </div>
+    <hr />
+    <br />
+    <div class="footer_base">
+      <div class="c1">
+        <ul>
+          <li>Privacy</li>
+          <li>Legal</li>
+          <li>Policy</li>
+          <li>Sitemap</li>
+        </ul>
+      </div>
+      <div class="c2">
+        <ul>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-facebook"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
+          <li><i class="fab fa-whatsapp"></i></li>
+          <li><i class="fab fa-linkedin"></i></li>
+        </ul>
+      </div>
+    </div>
+    <!-- footer end -->
+  </body>
+</html>
